@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>列印表格</title>	
+</head>
+<body>
+	<Script>
+		var A1= 1;
+		var A2= 1;
+		var A3= 0;
+		var A4= 0;
+		var B1= 1;
+		var B2= 0;
+		var B3= 1;
+		var B4= 0;
+		var NA1=(~A1);
+		var NA2=(~A2);
+		var NA3=(~A3);
+		var NA4=(~A4);
+		var NB1=(~B1);
+		var NB2=(~B2);
+		var NB3=(~B3);
+		var NB4=(~B4);
+		var AAB1=(A1&B1);
+		var AAB2=(A2&B2);
+		var AAB3=(A3&B3);
+		var AAB4=(A4&B4);
+		var AOB1=(A1|B1);
+		var AOB2=(A2|B2);
+		var AOB3=(A3|B3);
+		var AOB4=(A4|B4);
+		var AXOB1=(A1^B1);
+		var AXOB2=(A2^B2);
+		var AXOB3=(A3^B3);
+		var AXOB4=(A4^B4);
+		
+		document.write("<table border=1>");
+		document.write("<tr><td>a</td><td>b</td><td>NOT a</td><td>NOT b</td><td>a AND b</td><td>a OR b</td><td>a XOR b</td></tr>");
+		
+		document.write("<tr><td>"+A1+"</td><td>"+B1+"</td><td>"+NA1+"</td><td>"+NB1+"</td><td>"+AAB1+"</td><td>"+AOB1+"</td><td>"+AXOB1+"</td></tr>");
+		document.write("<tr><td>"+A2+"</td><td>"+B2+"</td><td>"+NA2+"</td><td>"+NB2+"</td><td>"+AAB2+"</td><td>"+AOB2+"</td><td>"+AXOB2+"</td></tr>");
+		document.write("<tr><td>"+A3+"</td><td>"+B3+"</td><td>"+NA3+"</td><td>"+NB3+"</td><td>"+AAB3+"</td><td>"+AOB3+"</td><td>"+AXOB3+"</td></tr>");
+		document.write("<tr><td>"+A4+"</td><td>"+B4+"</td><td>"+NA4+"</td><td>"+NB4+"</td><td>"+AAB4+"</td><td>"+AOB4+"</td><td>"+AXOB4+"</td></tr>");
+		document.write("</table>");
+
+	</Script>
+</body>
+</html>
